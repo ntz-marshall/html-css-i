@@ -1,0 +1,17 @@
+body {
+    background-color: #cccccc;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* hierarquia o navegador vai procurar
+todo strong dentro de um em */
+em strong {
+    color: red;
+}
