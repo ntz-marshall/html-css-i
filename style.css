@@ -1,9 +1,14 @@
 body {
-    background-color: #cccccc;
+    background-color: #FFFFFF;
 }
 
 #banner {
     width: 100%;
+}
+
+.principal {
+    background-color: #cccccc;
+    padding: 30px;
 }
 
 h1 {
@@ -18,12 +23,36 @@ p {
     font-size: 20px;
 }
 
-/* hierarquia o navegador vai procurar
-todo strong dentro de um em */
+/*  hierarquia o navegador vai procurar
+    todo strong dentro de um em   */
 em strong {
     color: #FF0000;
 }
 
 .itens {
     font-style: italic;
+}
+
+.beneficios {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+/*  o display da tag, pode ser tanto inline quanto block, ou ambos
+    e isso significa que ele bloqueia o espaço na linha que ele ocupa
+    mas um tipo que pode ser inline-block, permite que mesmo sendo
+    bloqueado, vc possa mexer em sua largura e tamanho  */
+
+.imgBeneficios {
+    width: 50%;
 }
