@@ -2,6 +2,10 @@ body {
     background-color: #cccccc;
 }
 
+#banner {
+    width: 100%;
+}
+
 h1 {
     text-align: center;
 }
@@ -10,8 +14,16 @@ p {
     text-align: center;
 }
 
+#missao {
+    font-size: 20px;
+}
+
 /* hierarquia o navegador vai procurar
 todo strong dentro de um em */
 em strong {
-    color: red;
+    color: #FF0000;
+}
+
+.itens {
+    font-style: italic;
 }
