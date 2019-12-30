@@ -1,11 +1,99 @@
 header {
     background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
 nav li {
     display: inline-block;
+    margin: 0, 0, 0, 15px;
 }
 
 nav a {
     text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* :hover captura o movimento do mouse sobre um elemento */
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* essa propriedade ajuda o navegador a calcular
+    o padding dentro do width deixando tudo equilibrado */
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+.produtos li:hover {
+    border: 6px solid #b80707;
+}
+
+.produtos li:active {
+    /* quando eu estiver com o click pressionado*/
+    border: 6px solid #07b807;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+/*  Algumas pseudo-classes CSS
+        º hover, quando o usuário passa o cursor sobre o elemento
+        º active, quando um elemento está sendo ativado pelo usuário */
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background-image: url("imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
