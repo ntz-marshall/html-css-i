@@ -1,77 +1,99 @@
-body {
-    background-color: #FFFFFF;
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
 }
 
-#banner {
-    width: 100%;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.principal {
-    background-color: #cccccc;
-    margin-top: -3px;
-    padding: 26px;
-    border: 5px solid black;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.titulo-centralizado {
-    text-align: center;
+nav li {
+    display: inline-block;
+    margin: 0, 0, 0, 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
     font-size: 22px;
-    padding-bottom: 5px;
+    text-decoration: none;
 }
 
-p {
+nav a:hover {
+    /* :hover captura o movimento do mouse sobre um elemento */
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
     text-align: center;
-    font-size: 18px;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* essa propriedade ajuda o navegador a calcular
+    o padding dentro do width deixando tudo equilibrado */
+    border: 2px solid #000000;
+    border-radius: 30px;
 }
 
-#missao {
-    font-size: 20px;
-    padding: 5px 0;
+.produtos li:hover {
+    border: 6px solid #b80707;
 }
 
-/*  hierarquia o navegador vai procurar
-    todo strong dentro de um em   */
-em strong {
-    color: #FF0000;
+.produtos li:active {
+    /* quando eu estiver com o click pressionado*/
+    border: 6px solid #07b807;
 }
 
-.itens {
-    font-style: italic;
+.produtos li:hover h2 {
+    font-size: 34px;
 }
 
-.beneficios {
-    background-color: #FFFFFF;
-    padding: 15px;
-}
+/*  Algumas pseudo-classes CSS
+        º hover, quando o usuário passa o cursor sobre o elemento
+        º active, quando um elemento está sendo ativado pelo usuário */
 
-.lista-beneficios h3 {
-    font-size: 26px;
+.produtos h2 {
+    font-size: 30px;
     font-weight: bold;
 }
 
-.lista-beneficios:hover h3 {
-    font-size: 33px;
+.produto-descricao {
+    font-size: 18px;
 }
 
-.lista-beneficios {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    margin: 30px 0 0 50px;
-    padding: 30px 20px;
-    box-sizing: border-box;
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.lista-beneficios:hover {
-    font-size: 20px;
+footer {
+    text-align: center;
+    background-image: url("imagens/bg.jpg");
+    padding: 40px 0;
 }
 
-/*  o display da tag, pode ser tanto inline quanto block, ou ambos
-    e isso significa que ele bloqueia o espaço na linha que ele ocupa
-    mas um tipo que pode ser inline-block, permite que mesmo sendo
-    bloqueado, vc possa mexer em sua largura e tamanho  */
-
-.imgBeneficios {
-    width: 50%;
-    margin-left: 60px;
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
