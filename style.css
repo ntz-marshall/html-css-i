@@ -1,3 +1,9 @@
+/*      css do header, footer, e da página produtos     */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background-color: #BBBBBB;
     padding: 20px 0;
@@ -101,8 +107,7 @@ footer {
 /*  Aqui começa o CSS da página de Contato  */
 
 main {
-    width: 940px;
-    margin: 0 auto;
+    
 }
 
 form {
@@ -158,4 +163,145 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+/*      Aqui tem o CSS da nova home page        */
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    /*  equivalente ao dobro da quantidade de px  */
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0, 0, 0, 0.3);
+    /* alpha controla o nível de opacidade */
+    transition: 600ms;
+}
+
+.titulo-principal:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.principal p {
+    margin: 0 0 1em;
+    /*  margin proporcional ao tamanho da fonte  */
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background-color: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5em;
+}
+
+.itens:first-child {
+    /* pseudo elemento, mexe exclusivamente em um elemento da classe 
+    last-child (última 'criança')
+    nth-child(x) sendo x o número do elemento desejado se utilizar o valor
+    'n' ex.: '2n' estamos pegando só os membros pares */
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "★ ";
+}
+
+.imgBeneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 500ms; /* milisegundos*/
+    box-shadow: 10px 10px 10px black;
+}
+
+.imgBeneficios:hover {
+    opacity: 0.2;
+}
+
+.video {
+    width: 560px;
+    /* propriedade calc() faz o calculo automático do tamanho */
+    margin: 2em auto;
+}
+
+/* Falando sobre seletores, podemos editar qualquer conteudo,
+utilizando '>' pegamos o primeiro filho direto de uma tag.
+E usando '+' usamos o próximo item direto, ex 'img + p' (o p imediatamente após uma img) 
+ex² 'img ~ p' estiliza tods os paragrafos depois de uma img
+'.principal p:not(#missao) pega todos os 'p' exceto o #missao */
+
+@media screen and (max-width: 480px) {
+    /* A partir desse comando, conseguimos perguntar ao navegador, que tipo de
+    tela o user está usando, e devolver um código adequado */
+
+    /* Header, Footer, Home Page */
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imgBeneficios {
+        width: 100%;
+    }
+
+    /*   Produtos    */
 }
