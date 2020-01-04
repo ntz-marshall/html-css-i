@@ -106,10 +106,6 @@ footer {
 
 /*  Aqui começa o CSS da página de Contato  */
 
-main {
-    
-}
-
 form {
     margin: 40px 0;
 }
@@ -297,11 +293,37 @@ ex² 'img ~ p' estiliza tods os paragrafos depois de uma img
 
     nav {
         position: static;
+        padding: 0 0 0 15%;
     }
 
     .lista-beneficios, .imgBeneficios {
         width: 100%;
     }
 
+    .imgBeneficios {
+        margin-top: 15px;
+    }
+
     /*   Produtos    */
+    .produtos {
+        width: auto;
+    }
+    
+    .produtos li {
+        text-align: center;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 80%;
+    }
+
+    /*      Contato     */
+    form {
+        padding: 0 0 0 15%;
+    }
+    .enviar {
+        width: 70%;
+    }
+    table {
+        margin: 20px auto 40px auto;
+    }
 }
